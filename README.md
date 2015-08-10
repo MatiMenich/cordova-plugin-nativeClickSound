@@ -1,8 +1,10 @@
-# Native Click Sound Cordova Plugin For Android
+# Native Click Sound Cordova Plugin
+
+* Now with support for iOS and Android *
 
 Just specify an array of class strings and on an onclick event, it will trigger the default click sound for the platform.
 
-Based on a blog post from [@pieterderycke](https://pieterderycke.wordpress.com/2014/01/20/native-tick-sound-on-button-click-with-phonegap/)
+Android part based on a blog post from [@pieterderycke](https://pieterderycke.wordpress.com/2014/01/20/native-tick-sound-on-button-click-with-phonegap/)
 
 ## Installation
 
@@ -13,15 +15,13 @@ cordova plugin add https://github.com/MatiMenich/cordova-plugin-nativeClickSound
 ## Usage
 
 ```js
-var clickyClasses = ['sound-click', 'button'] 
+var clickyClasses = ['sound-click', 'button']; 
 
 nativeclick.watch(clickyClasses);
 ```
 
 ## License
 [The MIT License (MIT)](http://www.opensource.org/licenses/mit-license.html)
-
-The MIT License (MIT)
 
 Copyright (c) 2015 Matías Menich
 
