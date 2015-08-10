@@ -21,13 +21,13 @@ public class NativeClick extends CordovaPlugin {
                         view.playSoundEffect(SoundEffectConstants.CLICK);
                     }
                     catch(Exception ex) {
-                        callbackContext.error(ex.getStackTrace());
+                        callbackContext.error(ex.getMessage());
                     }
                 }
             });
         }
         catch(Exception ex) {
-            callbackContext.error(ex.getStackTrace());
+            callbackContext.error(ex.getMessage());
         }
  
 

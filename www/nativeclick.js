@@ -6,10 +6,10 @@ var nativeclick = {
 		document.body.onclick = function(e) {
 		   e=window.event? event.srcElement: e.target;
 		   if(e.className && e.className.indexOf('button')!=-1){
-		   		exec(successCallback, errorCallback, "SoundEffects", "click", []);
+		   		exec(successCallback, errorCallback, "NativeClick", "click", []);
 		   }
 		   else if(e.className && e.className.indexOf('sound-click')!=-1){
-		   		exec(successCallback, errorCallback, "SoundEffects", "click", []);
+		   		exec(successCallback, errorCallback, "NativeClick", "click", []);
 		   }
 		};
 	}
