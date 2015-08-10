@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        id="com.matimenich.plugins.nativeclick" version="0.0.1">
+    <name>NativeClickSound</name>
+    <description>Get native click sounds on android</description>
+    <license>MIT</license>
+    <keywords>android,click</keywords>
+    <engines>
+        <engine name="cordova" version=">=3.7.1"/>
+    </engines>
+    <js-module src="www/nativelick.js" name="nativelick">
+        <clobbers target="nativelick" />
+    </js-module>
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="nativelick">
+                <param name="android-package" value="com.matimenich.plugins.nativelick.NativeClick"/>
+                <param name="onload" value="true" />
+            </feature>
+        </config-file>
+        <source-file src="src/android/NativeClick.java" target-dir="src/com/matimenich/plugins/nativelick"/>
+    </platform>
+</plugin>
