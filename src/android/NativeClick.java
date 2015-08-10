@@ -13,18 +13,25 @@ public class NativeClick extends CordovaPlugin {
 
     @Override
     public boolean execute(String action, JSONArray args, final CallbackContext callbackContext) throws JSONException {
-        if("click".equals(action)) {
+        try {
             cordova.getActivity().runOnUiThread(new Runnable(){
                 public void run(){
-                    View view = cordova.getActivity().getWindow().getDecorView();
-                    view.playSoundEffect(SoundEffectConstants.CLICK);
+                    try {
+                        View view = cordova.getActivity().getWindow().getDecorView();
+                        view.playSoundEffect(SoundEffectConstants.CLICK);
+                    }
+                    catch(Exception ex) {
+                        callbackContext.error(ex.getStackTrace());
+                    }
                 }
             });
-
-            return true;
+        }
+        catch(Exception ex) {
+            callbackContext.error(ex.getStackTrace());
         }
  
-        return false;
+
+        return true;
     }
 }
 

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
         id="com.matimenich.plugins.nativeclick" version="0.0.1">
-    <name>NativeClickSound</name>
+    <name>Android Native Click Sound</name>
     <description>Get native click sounds on android</description>
     <license>MIT</license>
     <keywords>android,click</keywords>
@@ -13,7 +13,7 @@
     </js-module>
     <platform name="android">
         <config-file target="res/xml/config.xml" parent="/*">
-            <feature name="nativeclick">
+            <feature name="NativeClick">
                 <param name="android-package" value="com.matimenich.plugins.nativeclick.NativeClick"/>
                 <param name="onload" value="true" />
             </feature>
