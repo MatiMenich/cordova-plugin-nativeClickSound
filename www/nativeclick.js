@@ -8,7 +8,7 @@ var nativeclick = {
 
 			classes = classes || [];
 
-			for(var i = 0; i < clasess.length; i++) {
+			for(var i = 0; i < classes.length; i++) {
 				if(e.className && e.className.indexOf(classes[i]) != -1) {
 					exec(successCallback, errorCallback, "NativeClick", "click", options);
 				}
