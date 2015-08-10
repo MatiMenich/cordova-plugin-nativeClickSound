@@ -8,16 +8,16 @@
     <engines>
         <engine name="cordova" version=">=3.7.1"/>
     </engines>
-    <js-module src="www/nativelick.js" name="nativelick">
-        <clobbers target="nativelick" />
+    <js-module src="www/nativeclick.js" name="nativeclick">
+        <clobbers target="nativeclick" />
     </js-module>
     <platform name="android">
         <config-file target="res/xml/config.xml" parent="/*">
-            <feature name="nativelick">
-                <param name="android-package" value="com.matimenich.plugins.nativelick.NativeClick"/>
+            <feature name="nativeclick">
+                <param name="android-package" value="com.matimenich.plugins.nativeclick.NativeClick"/>
                 <param name="onload" value="true" />
             </feature>
         </config-file>
-        <source-file src="src/android/NativeClick.java" target-dir="src/com/matimenich/plugins/nativelick"/>
+        <source-file src="src/android/NativeClick.java" target-dir="src/com/matimenich/plugins/nativeclick"/>
     </platform>
 </plugin>
