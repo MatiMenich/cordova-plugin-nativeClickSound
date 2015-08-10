@@ -31,7 +31,7 @@ public class NativeClick extends CordovaPlugin {
         }
  
 
-        return true;
+        callbackContext.success()
     }
 }
 

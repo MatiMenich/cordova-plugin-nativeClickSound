@@ -1,12 +1,19 @@
 # Native Click Sound Cordova Plugin For Android
 
+Just specify an array of class strings and on an onclick event, it will trigger the default click sound for the platform.
+
 ## Installation
-### Prerequsites
-This must be compiled at Android API level 21 or higher which means you'll have to be using cordova-android v3.7.1 or higher.
-The latest version of cordova-cli does not use cordova-android 3.7.1, so to manually install run the following:
+
 ``` bash
-cordova platform remove android
-cordova platform add android@3.7.1
+cordova plugin add https://github.com/MatiMenich/cordova-plugin-nativeClickSound
+```
+
+## Usage
+
+```js
+var clickyClasses = ['sound-click', 'button'] 
+
+nativeclick.watch(clickyClasses);
 ```
 
 

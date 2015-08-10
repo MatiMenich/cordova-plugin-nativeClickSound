@@ -2,15 +2,17 @@ var exec = require('cordova/exec');
 
 var nativeclick = {
 
-	watch: function(successCallback, errorCallback, options){
+	watch: function(classes){
 		document.body.onclick = function(e) {
-		   e=window.event? event.srcElement: e.target;
-		   if(e.className && e.className.indexOf('button')!=-1){
-		   		exec(successCallback, errorCallback, "NativeClick", "click", []);
-		   }
-		   else if(e.className && e.className.indexOf('sound-click')!=-1){
-		   		exec(successCallback, errorCallback, "NativeClick", "click", []);
-		   }
+			e=window.event? event.srcElement: e.target;
+
+			classes = classes || [];
+
+			for(var i = 0; i < clasess.length; i++) {
+				if(e.className && e.className.indexOf(classes[i]) != -1) {
+					exec(successCallback, errorCallback, "NativeClick", "click", options);
+				}
+			}
 		};
 	}
 };
