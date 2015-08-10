@@ -2,24 +2,27 @@ var exec = require('cordova/exec');
 
 var nativeclick = {
 
-	watch: function(classes){
+  watch: function(classes){
 
+    var clickyClasses = classes || [];
+
+    for(var i = 0; i < clickyClasses.length; i++) {
+      watchClass(clickyClasses[i]);
+    }
+
+    function watchClass(name){
+      document.body.addEventListener( 'click' , function(e) {
+        e = window.event? event.srcElement: e.target;
+        if(e.className && e.className.indexOf(name) != -1) {
+          exec(null, errorCallback, "NativeClick", "click", []);
+        }
+      });
+    }
+   
     var errorCallback = function(error){
       console.error("Native Click Error:"+error);
     };
-
-		document.body.onclick = function(e) {
-			e=window.event? event.srcElement: e.target;
-
-			var clickyClasses = classes || [];
-
-			for(var i = 0; i < clickyClasses.length; i++) {
-				if(e.className && e.className.indexOf(clickyClasses[i]) != -1) {
-					exec(null, errorCallback, "NativeClick", "click", []);
-				}
-			}
-		};
-	}
+  }
 };
 
 module.exports = nativeclick;
