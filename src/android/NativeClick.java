@@ -30,8 +30,7 @@ public class NativeClick extends CordovaPlugin {
             callbackContext.error(ex.getMessage());
         }
  
-
-        callbackContext.success()
+        callbackContext.success();
     }
 }
 
