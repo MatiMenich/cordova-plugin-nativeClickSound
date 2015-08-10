@@ -15,7 +15,7 @@ var nativeclick = {
 
 			for(var i = 0; i < clickyClasses.length; i++) {
 				if(e.className && e.className.indexOf(clickyClasses[i]) != -1) {
-					exec(null, errorCallback, "NativeClick", "click", options);
+					exec(null, errorCallback, "NativeClick", "click", []);
 				}
 			}
 		};
