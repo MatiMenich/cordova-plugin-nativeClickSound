@@ -2,6 +2,8 @@
 
 Just specify an array of class strings and on an onclick event, it will trigger the default click sound for the platform.
 
+Based on a blog post from [@pieterderycke](https://pieterderycke.wordpress.com/2014/01/20/native-tick-sound-on-button-click-with-phonegap/)
+
 ## Installation
 
 ``` bash
