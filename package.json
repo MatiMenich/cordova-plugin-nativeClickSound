@@ -1,0 +1,51 @@
+{
+  "name": "cordova-plugin-nativeClickSound",
+  "version": "0.0.2",
+  "description": "Cordova plugin for getting native click sounds on android and ios",
+  "cordova": {
+    "id": "cordova-plugin-nativeClickSound",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MatiMenich/cordova-plugin-nativeClickSound.git"
+  },
+  "dependencies": {
+  },
+  "keywords": [
+    "cordova",
+    "android",
+    "ios",
+    "native click",
+    "click",
+    "click sound",
+    "cordova plugin",
+    "download",
+    "install",
+    "ecosystem:cordova",
+    "cordova-android"
+    "cordova-ios"
+  ],
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.0.0"
+    }
+  ],
+  "author": {
+    "name": "Matías Menich",
+    "email": "matimenich@gmail.com"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/MatiMenich/cordova-plugin-nativeClickSound/README.md"
+    }
+  ],
+  "bugs": {
+    "url": "https://github.com/MatiMenich/cordova-plugin-nativeClickSound/issues"
+  },
+  "homepage": "https://github.com/MatiMenich/cordova-plugin-nativeClickSound"
