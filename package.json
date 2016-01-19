@@ -26,7 +26,7 @@
     "download",
     "install",
     "ecosystem:cordova",
-    "cordova-android"
+    "cordova-android",
     "cordova-ios"
   ],
   "engines": [
