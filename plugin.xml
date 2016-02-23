@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
-        id="com.matimenich.plugins.nativeclick" version="0.0.1">
+        id="cordova-plugin-nativeclicksound" version="0.0.3">
     <name>Native Click Sound</name>
     <description>Get native click sounds on android and ios</description>
     <license>MIT</license>
