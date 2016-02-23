@@ -2,7 +2,7 @@
 
 * Now with support for iOS and Android *
 
-Just specify an array of class strings and on an onclick event, it will trigger the default click sound for the platform.
+Just specify an array of class strings and on an onclick event, it will trigger the default click sound for the platform. Also you can trigger the click sound manually.
 
 Android part based on a blog post from [@pieterderycke](https://pieterderycke.wordpress.com/2014/01/20/native-tick-sound-on-button-click-with-phonegap/)
 
@@ -18,6 +18,26 @@ cordova plugin add https://github.com/MatiMenich/cordova-plugin-nativeClickSound
 var clickyClasses = ['sound-click', 'button']; 
 
 nativeclick.watch(clickyClasses);
+```
+
+Also, you cant trigger the click sound:
+
+```js
+nativeclick.trigger();
+```
+
+If you're using angular for example:
+
+```html
+<!-- In the view -->
+<button ng-click="click()"></button>
+```
+
+```js
+// In the controller
+$scope.click = function() {
+  nativeclick.trigger();
+};
 ```
 
 ## License
