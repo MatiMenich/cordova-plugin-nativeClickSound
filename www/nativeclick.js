@@ -3,7 +3,6 @@ var exec = require('cordova/exec');
 var nativeclick = {
 
   watch: function(classes){
-
     var clickyClasses = classes || [];
 
     for(var i = 0; i < clickyClasses.length; i++) {
@@ -17,12 +16,16 @@ var nativeclick = {
           exec(null, errorCallback, "NativeClick", "click", []);
         }
       });
-    }
-   
-    var errorCallback = function(error){
-      console.error("Native Click Error:"+error);
-    };
+    }    
+  },
+
+  trigger: function () {
+    exec(null, errorCallback, "NativeClick", "click", []);
   }
 };
 
 module.exports = nativeclick;
+
+var errorCallback = function(error){
+  console.error("Native Click Error:"+error);
+};
