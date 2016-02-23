@@ -9,7 +9,7 @@ Android part based on a blog post from [@pieterderycke](https://pieterderycke.wo
 ## Installation
 
 ``` bash
-cordova plugin add https://github.com/MatiMenich/cordova-plugin-nativeClickSound
+cordova plugin add cordova-plugin-nativeclicksound
 ```
 
 ## Usage
