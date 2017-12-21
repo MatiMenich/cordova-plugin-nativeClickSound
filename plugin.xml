@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
-        id="cordova-plugin-nativeclicksound" version="0.0.3">
+        id="cordova-plugin-nativeclicksound" version="0.0.4">
     <name>Native Click Sound</name>
     <description>Get native click sounds on android and ios</description>
     <license>MIT</license>
@@ -20,10 +20,10 @@
         </config-file>
         <source-file src="src/android/NativeClick.java" target-dir="src/com/matimenich/plugins/nativeclick"/>
     </platform>
-    <platform name="ios">    
+    <platform name="ios">
         <config-file target="config.xml" parent="/*">
          <feature name="NativeClick">
-             <param name="ios-package" value="NativeClick" /> 
+             <param name="ios-package" value="NativeClick" />
          </feature>
         </config-file>
         <header-file src="src/ios/NativeClick.h" />

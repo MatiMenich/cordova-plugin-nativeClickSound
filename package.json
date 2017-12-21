@@ -1,6 +1,6 @@
 {
   "name": "cordova-plugin-nativeclicksound",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Cordova plugin for getting native click sounds on android and ios",
   "cordova": {
     "id": "cordova-plugin-nativeclicksound",
