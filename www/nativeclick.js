@@ -10,9 +10,8 @@ var nativeclick = {
     }
 
     function watchClass(name){
-      document.body.addEventListener( 'click' , function(e) {
-        e = window.event? event.srcElement: e.target;
-        if(e.className && e.className.indexOf(name) != -1) {
+        document.addEventListener('click', function(event) {
+        if (event.target.classList.contains(name) || event.target.parentElement.classList.contains(name) || event.target.parentElement.parentElement.classList.contains(name) || event.target.parentElement.parentElement.parentElement.classList.contains(name)) {
           exec(null, errorCallback, "NativeClick", "click", []);
         }
       });
